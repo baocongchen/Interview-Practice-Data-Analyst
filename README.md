@@ -17,7 +17,8 @@ Because the actions are related (truffles are taken one by one), the probability
 
 ## 3. Given the table users:
 
-     Table "users"
+     Table "users"<br>
+<pre>
 +-------------+-----------+
 | Column      | Type      |
 +-------------+-----------+
@@ -29,11 +30,11 @@ Because the actions are related (truffles are taken one by one), the probability
 | zip         | integer   |
 | active      | boolean   |
 +-------------+-----------+
-
+</pre>
 
 Construct a query to find the top 5 states with the highest number of active users. Include the number for each state in the query result. Example result:
 
-
+<pre>
 +------------+------------------+
 | state      | num_active_users |
 +------------+------------------+
@@ -43,6 +44,7 @@ Construct a query to find the top 5 states with the highest number of active use
 | Maine      | 201              |
 | Texas      | 189              |
 +------------+------------------+
+</pre>
 
 <code>
 SELECT state, sum(active) as num_active_users 
