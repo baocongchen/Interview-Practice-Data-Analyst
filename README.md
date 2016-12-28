@@ -29,7 +29,11 @@ Because the actions are related (truffles are taken one by one), the probability
 | zip         | integer   |
 | active      | boolean   |
 +-------------+-----------+
-construct a query to find the top 5 states with the highest number of active users. Include the number for each state in the query result. Example result:
+
+
+Construct a query to find the top 5 states with the highest number of active users. Include the number for each state in the query result. Example result:
+
+
 +------------+------------------+
 | state      | num_active_users |
 +------------+------------------+
@@ -40,14 +44,17 @@ construct a query to find the top 5 states with the highest number of active use
 | Texas      | 189              |
 +------------+------------------+
 
+<code>
 SELECT state, sum(active) as num_active_users 
 FROM users
 GROUP BY state
 ORDER BY sum(active) DESC
 LIMIT 5
+</code>
 
 ## 4. Define a function first_unique that takes a string as input and returns the first non-repeated (unique) character in the input string. If there are no unique characters return None. Note: Your code should be in Python.
 
+<code>
 def first_unique(string):
   # Use slicing to check for each character 
   for i in range(len(string)):
@@ -57,6 +64,7 @@ def first_unique(string):
       return string[i]
   # Return None when there's no unique character
   return None
+</code>
 
 ## 5. What are underfitting and overfitting in the context of Machine Learning? How might you balance them?
 
