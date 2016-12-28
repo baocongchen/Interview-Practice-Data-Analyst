@@ -47,13 +47,13 @@ Construct a query to find the top 5 states with the highest number of active use
 +------------+------------------+
 </pre>
 
-<code>
+<pre>
 SELECT state, sum(active) as num_active_users 
 FROM users
 GROUP BY state
 ORDER BY sum(active) DESC
 LIMIT 5
-</code>
+</pre>
 
 ## 4. Define a function first_unique that takes a string as input and returns the first non-repeated (unique) character in the input string. If there are no unique characters return None. Note: Your code should be in Python.
 
