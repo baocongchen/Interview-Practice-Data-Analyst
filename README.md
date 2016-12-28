@@ -57,7 +57,7 @@ LIMIT 5
 
 ## 4. Define a function first_unique that takes a string as input and returns the first non-repeated (unique) character in the input string. If there are no unique characters return None. Note: Your code should be in Python.
 
-<code>
+<pre>
 def first_unique(string):
   # Use slicing to check for each character 
   for i in range(len(string)):
@@ -67,7 +67,7 @@ def first_unique(string):
       return string[i]
   # Return None when there's no unique character
   return None
-</code>
+</pre>
 
 ## 5. What are underfitting and overfitting in the context of Machine Learning? How might you balance them?
 
