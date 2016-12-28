@@ -17,7 +17,8 @@ Because the actions are related (truffles are taken one by one), the probability
 
 ## 3. Given the table users:
 
-     Table "users"<br>
+Table "users"
+
 <pre>
 +-------------+-----------+
 | Column      | Type      |
