@@ -1,7 +1,7 @@
 # Interview-Practice-Data-Analyst
 
 ### 1. Describe a data project you worked on recently.
-I remember the challenge I had when I tried to build an algorithm for a project in Udacity Data Analyst Nanodegree program. The project name is "Identifying fraud from enron data". I learned about machine learning and prediction model when I enrolled in edX and Coursera online courses, and did a few projects related to this field in the past, but I can say that this project from Udacity's program was very challenging. I  looked at the project instruction and tried to figure out what I should do step by step. After that, I tried to run the python file that contained basic algorithm but it didn't work. So I researched online materials and used udacity forum to search for the same problem my peers may have. I finally found out that I did not download the necessary data because I forgot to run a python file required by Udacity. After I downloaded the data, I tried to import and visualize it to find out outliers, yet only successfully identified one outlier. The project review gave me a hint to find other 2 outliers. When I tried to build algorithms, I did not know how to get the best parameters for each algorithm, I researched online and found out that I could use `GridSearchCV` function to get best parameters. I chose 7 best features returned by the `SelectKBest` function, and my the performance of my naive bayse model finally exceeded the specification of Udacity. However, the project reviewer reminded me that I should explain the reason for choosing 7 best features that I selected; he also told me to measure the effect of new features in the final model by comparing its performances. Now, I know that it is also important that I can explain the process I go through when I build an algorithm.
+I recently worked on a project called "Make Effective Data Visualization". The goal of the project is to create a data visualization from a data set that tells a story or highlights trends or patterns in the data. I used dimple.js  to create the visualization. I used Prosper's loan data in this project. I built 3 charts that highlights the relationships between loan status with other variables such as employment status, loan term etc... I successfully built the charts and submitted my work. In the first review, the reviewer said that my work was great as a technical thing but he also pointed out that it was not explanatory, saying that I had created a very interesting set of charts that should engage the viewers to explore it in details, but the main aim of the project was to present explanatory visualization. I found out my big mistake, so I decided to add an explanation section to each chart. Moreover, I added an introduction section and a conclusion section. Some designs such as loading icon also added. However, I did not collect feedback as required. So the reviewer recommended some questions I could pose to collect feedback. I got positive feedback from 3 people, but there also some places they asked me to fix such as adding a link to download the data, adding a space to each word in a label to make it easy to read etc... I fixed them according to the feedback. Now everytime I look back at this project, I feel great about the process I went through and understand how important it is to collect feedback to improve user experience design.
 
 ### 2. You are given a ten piece box of chocolate truffles. You know based on the label that six of the pieces have an orange cream filling and four of the pieces have a coconut filling. If you were to eat four pieces in a row, what is the probability that the first two pieces you eat have an orange cream filling and the last two have a coconut filling?
 
@@ -14,6 +14,22 @@ Now, we have 4 orange cream chocolate truffles and 4 chocolate truffles left, so
 So now we have 4 orange cream chocolate truffles and 3 coconut chocolate truffles. The probability of selecting a coconut chocolate truffle is 3/7.
 
 Because the actions are related (truffles are taken one by one), the probability that the first two pieces you eat have an orange cream filling and the last two have a coconut filling is `(6/10) * (5/9) * (4/8) * (3/7) = 0.0714`
+
+####Follow-up question:  If you were given an identical box of chocolates and again eat four pieces in a row, what is the probability that exactly two contain coconut filling?
+
+<pre>
+Combination 1: Orange, Orange, Orange, Coconut 
+Combination 2: Orange, Coconut, Coconut, Orange
+Combination 3: Orange, Coconut, Coconut, Coconut
+Combination 4: Coconut, Coconut, Coconut, Coconut
+...
+Combination 14: Coconut, Orange, Orange, Orange
+</pre>
+
+There are 14 combinations available.
+When you choose 2 coconut chocolates from 4 chocolates, there are 2C4 combinations, which is 6 combinations. 
+
+The probability that you eat one coconut chocolate is `6/14=0.42857`
 
 ### 3. Given the table users:
 
@@ -81,6 +97,6 @@ To balance underfitting and overfitting, we use a right number of features, and 
 
 ### 6. If you were to start your data analyst position today, what would be your goals a year from now?
 
-I will work hard while studying to become a self-driving car engineer. I want to deepen my knowledge in data science and automation, so I will enroll in Udacity's self-driving car engineer program.
+I think at 23andMe I will be able to learn so much knowledge. I will use this opportunity to collaberate with the team to develop data-driven product that will help people access, understand and benefit from the human genome. Because technology is evolving so fast, I will work hard while studying to become a senior data scientist, deepening my knowledge in data analytics, prediction models and user experience design, so I will enroll in Udacity's data science programs such as Machine Learning engineer program, AI engineer program.
 
-In the first 9 months, I will try to finish this program. After that, I will find a place where I can apply my new skills and work as a self-driving car engineer.
+In the first 6 months, I will try to finish Machine Learning engineer program. After this, I will try to build a segmentation system that will help customize and generate report based on user's features. In the second 6 months, I will enroll in AI engineer program. After finishing this program, I want to develop a automatic design system based on user experience. 
